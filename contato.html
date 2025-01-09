@@ -8,25 +8,33 @@
 	<meta name="author" content="Felix Augusto Ferreira Oliveira">
 	<meta name="keywords" content="HTML, CSS, JavaScript">
 	<link rel="icon" type="image/svg" href="./assets/img/user.svg" />
+	<link rel="stylesheet" href="./assets/css/style.css" />
 	<title>Meu Perfil</title>
 </head>
 
 <body>
-	<!-- Cabeçalho da Página (header) -->
-	<header>
-		<!-- Div Conteudo do Cabeçalho -->
-		<div id="header_content">
-			<!-- Titulo do Cabeçalho -->
-			<div id="titulo">
-				<!-- Seu nome -->
-				<h1>Generation Brasil</h1>
-			</div>
 
-			<!-- Conteudo do Menu da Página (header) -->
+	<div class="custom-shape-divider-top-1736381775">
+		<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+			<path
+				d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+				opacity=".25" class="shape-fill"></path>
+			<path
+				d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+				opacity=".5" class="shape-fill"></path>
+			<path
+				d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+				class="shape-fill"></path>
+		</svg>
+	</div>
+
+	<header>
+
+		<div id="header_content" class="flex">
+
 			<div id="menu">
-				<!-- Menu da Página -->
+
 				<nav>
-					<!-- Marcadores não ordenados + links -->
 					<ul id="menu">
 						<li>
 							<a href="index.html"> Home </a>
@@ -40,13 +48,13 @@
 		</div>
 	</header>
 
-	<!-- Seção Principal da Página (main) -->
+
 	<main>
 
-		<!-- Seção Formulário de Contato e Redes Sociais -->
-		<section id="contact">
 
-			<!-- Seção do Formulário -->
+		<section id="contact" class="flex">
+
+
 			<form action="#" method="submit" id="formulario">
 
 				<label for="nome">Nome: </label>
@@ -69,7 +77,6 @@
 
 			</form>
 
-			<!-- Seção do Google Maps -->
 			<article id="mapa">
 
 				<p>Rua Piratini </p>
@@ -77,7 +84,7 @@
 
 				<iframe
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.182769522044!2d-43.60166300748192!3d-22.68423911568864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x995ade44998a67%3A0xd4308c8944f190c5!2sR.%20Piratini%2C%20578%20-%20Citr%C3%B3polis%2C%20Japeri%20-%20RJ%2C%2026290-759%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1736210752652!5m2!1spt-BR!2sus"
-					width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+					width="500" height="450" style="border:0; border-radius: 25px;" allowfullscreen="" loading="lazy"
 					referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 			</article>
@@ -86,19 +93,19 @@
 
 	</main>
 
-	<!-- Rodapé da Página (footer) -->
-	<footer>
 
-		<!-- Seção de Contato - Redes Sociais -->
+	<footer class="flex">
+
+
 		<section id="redes_sociais">
 
-			<a href="">
+			<a href="https://www.linkedin.com/in/felix-augusto/">
 				<img src="assets/img/linkedin.svg" alt="LinkedIn" />
 			</a>
-			<a href="">
+			<a href="https://github.com/AugustoFO">
 				<img src="assets/img/github.svg" alt="Github" />
 			</a>
-			<a href="">
+			<a href="https://www.instagram.com/augustofeoliv/">
 				<img src="assets/img/instagram.svg" alt="Instagram" />
 			</a>
 
