@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    outline: none;
-    font-weight: 400;
     font-family: "Poppins", serif;
+    text-decoration: none;
 }
 
 :root {
@@ -21,7 +19,7 @@
 
 html {
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 body {
@@ -29,18 +27,18 @@ body {
     color: var(--perola);
 }
 
-/* Definindo as configurações de títulos e paragrafo */
-h1{
+/* Configurações de texto */
+h1 {
     font-size: 1.2rem;
 }
 
-.nome{
+.nome {
     font-size: 1.5rem;
     color: var(--verde);
     font-weight: 700;
 }
 
-h3{
+h3 {
     padding: 1rem;
     color: var(--branco);
     font-size: 1.25rem;
@@ -48,24 +46,23 @@ h3{
     text-align: center;
 }
 
-p{
+p {
     font-size: 1rem;
     line-height: 1.5rem;
     text-align: justify;
     padding: 0.5rem 0;
 }
 
+/* Divider */
 .custom-shape-divider-top-1736381775 {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
-    line-height: 0;
 }
 
 .custom-shape-divider-top-1736381775 svg {
-    position: relative;
     display: block;
     width: calc(100% + 1.3px);
     height: 150px;
@@ -73,10 +70,10 @@ p{
 }
 
 .custom-shape-divider-top-1736381775 .shape-fill {
-    fill:  var(--verde);;
+    fill: var(--verde);
 }
-/* Definindo as configurações do Flexbox */
 
+/* Flexbox */
 .flex {
     display: flex;
     justify-content: center;
@@ -87,73 +84,62 @@ p{
     display: flex;
     justify-content: flex-start;
 }
- 
 
- /* Estilização da Seção Header */
- #header_content {
+/* Header */
+#header_content {
     height: 80px;
     position: sticky; 
-    top: 0; 
-    width: 100%; 
+    top: 0;
+    width: 100%;
     justify-content: flex-end;
     padding: 24px;
 }
- 
- #menu li {
+
+#menu li {
     display: inline;
     padding: 1.2rem;
- }
- 
- #menu li a {
-    text-decoration: none;
+}
+
+#menu li a {
     color: var(--perola);
     font-size: 20px;
- }
- 
- #menu li a:hover {
-    color: var(--perola);
+}
+
+#menu li a:hover {
     text-decoration: underline;
- }
- 
- /* Estilização da Seção About */
+}
 
-
- #about{
+/* About */
+#about {
     flex-direction: column;
     margin: 10rem auto;
     width: 75%;
- }
-
-#conteudo{
-    flex-direction: row;
-    gap: 10rem;
-
 }
 
-#conteudo img{
+#conteudo {
+    flex-direction: row;
+    gap: 10rem;
+}
+
+#conteudo img {
     width: 850px;
 }
 
- 
-/* Estilização da Seção Video */
-
-#musica{
+/* Video */
+#musica {
     flex-direction: column;
     margin: 2rem auto;
     width: 90%;
- }
+}
 
- #musica h2{
+#musica h2 {
     padding-bottom: 25px;
- }
+}
 
-/* Estilização da Seção Footer */
-
-footer{
+/* Footer */
+footer {
     flex-direction: column;
-    margin: 0;
     padding: 2rem;
-    font-weight: bold;
     text-align: center;
     background-color: var(--verde);
 }
@@ -161,11 +147,11 @@ footer{
 #redes_sociais {
     display: flex;
     justify-content: space-evenly; 
-    margin: 1rem 0 0 0;
+    margin-top: 1rem;
     width: 320px;
 }
 
-#redes_sociais img{
+#redes_sociais img {
     height: 36px;
     width: 36px;
     filter: brightness(1.5);
@@ -174,34 +160,19 @@ footer{
 .social_icon {
     width: 4rem;
     height: 4rem;
-    filter: brightness(0) 
-            saturate(100%) 
-            invert(100%) 
-            sepia(0%) 
-            saturate(7457%) 
-            hue-rotate(23deg) 
-            brightness(95%) 
-            contrast(87%);
+    filter: brightness(0) saturate(100%) invert(100%);
 }
 
 .social_icon:hover {  
-    filter: brightness(0) 
-            saturate(100%) 
-            invert(65%) 
-            sepia(59%) 
-            saturate(2437%) 
-            hue-rotate(213deg) 
-            brightness(86%) 
-            contrast(88%);
+    filter: brightness(0) saturate(100%) invert(65%) sepia(59%) saturate(2437%) hue-rotate(213deg) brightness(86%) contrast(88%);
 }
 
- /*Estilização da Página de Contato*/
- 
- #contact{
+/* Contato */
+#contact {
     flex-direction: row;
     gap: 2rem;
     padding-top: 100px;
- }
+}
 
 form {
     display: flex;
@@ -209,12 +180,10 @@ form {
     width: 480px;
     margin: 2rem 0;
     padding: 1.5rem;
-    border: none;
 }
 
 form label {
     font-size: 1rem;
-    text-align: left;
     font-weight: 500;
 }
 
@@ -233,15 +202,13 @@ textarea {
     height: 5rem;
 }
 
-form span{
+form span {
     margin: 0 0 0.5rem 0.75rem;
     font-size: 0.75rem;
-    line-height: 1rem;
     color: red;
 }
 
 form button {
-    text-align: center;
     padding: 0.75rem 2rem;
     background: var(--perola);
     border: 1px solid var(--perola);
@@ -249,22 +216,17 @@ form button {
     border-radius: 0.75rem;
     font-weight: 700;
     font-size: 1rem;
-}
-
-form button:hover {
-    background: var(--perola);
     cursor: pointer;
 }
 
-/* Estilização do Mapa */
-#mapa{
+/* Mapa */
+#mapa {
     width: 480px;
     flex-direction: column;
     gap: 3rem;
 }
 
-#endereco > p{
+#endereco > p {
     font-size: 1rem;
-    text-align: justify;
     font-weight: 600;
 }
